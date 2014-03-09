@@ -1,2 +1,19 @@
-
 welcome
+<!-- Message Template -->
+<script id="messageTemplate" type="text/template">
+<div>
+  <div class="user-image">
+    <%= image_tag "pg.jpg" %>
+  </div>
+  <div>
+  {{user_name}}
+  {{txt}}
+  </div>
+</div>
+</script>
+
+<div id="messageBoard">
+</div>
+
+<textarea id="messageText"></textarea>
+<button id="sendBtn">send</button>
