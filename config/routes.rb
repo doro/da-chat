@@ -56,6 +56,7 @@ De::Application.routes.draw do
 
   resources :messages
   
-  root 'home#index'
+  #root 'home#index'
+  get '/:username', to: 'home#index'
   
 end
