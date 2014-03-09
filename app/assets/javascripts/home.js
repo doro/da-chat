@@ -65,7 +65,7 @@ var App = {
     var len = messages.length;
     var board = $('#messageBoard');
 
-    for (var i=0; i <= len; i++) {
+    for (var i=0; i < len; i++) {
       var m = {"user_name": messages[i].user_name, "txt": messages[i].txt, "timestamp": messages[i].timestamp }
       console.log(m);
       var msg = $(t(m));
